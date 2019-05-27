@@ -8,6 +8,6 @@ spec:
   clusterName: cluster-1
   git:
     syncRepo: git@github.com:elatovg/anthos-conf-mgmt.git
-    syncBranch: 0.1.0
+    syncBranch: master
     secretType: ssh
     policyDir: "configs"
