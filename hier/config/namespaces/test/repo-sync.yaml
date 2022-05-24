@@ -7,7 +7,7 @@ spec:
   # Since this is for a namespace repository, the format should be unstructured
   sourceFormat: unstructured
   git:
-   repo: git@github.com:elatovg/acm-test-app.git
+   repo: https://github.com/elatovg/acm-test-app.git
    branch: main
    dir: "config"
    auth: none
