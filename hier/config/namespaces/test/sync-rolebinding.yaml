@@ -1,13 +1,14 @@
+# ROOT_REPO/namespaces/NAMESPACE/sync-rolebinding.yaml
 kind: RoleBinding
- apiVersion: rbac.authorization.k8s.io/v1
- metadata:
-   name: syncs-repo
-   namespace: test
- subjects:
- - kind: ServiceAccount
-   name: test-ns-acm-rolebinding
-   namespace: config-management-system
- roleRef:
-   kind: ClusterRole
-   name: edit
-   apiGroup: rbac.authorization.k8s.io
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: syncs-repo
+  namespace: NAMESPACE
+subjects:
+- kind: ServiceAccount
+  name: SERVICE_ACCOUNT_NAME
+  namespace: config-management-system
+roleRef:
+  kind: ClusterRole
+  name: RECONCILER_ROLE
+  apiGroup: rbac.authorization.k8s.io
