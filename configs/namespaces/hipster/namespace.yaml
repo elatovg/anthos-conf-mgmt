@@ -1,8 +1,0 @@
-apiVersion: v1
-kind: Namespace
-metadata:
-  annotations:
-    configmanagement.gke.io/cluster-selector: selector-cluster-1
-  name: hipster
-  labels:
-    istio-injection: enabled

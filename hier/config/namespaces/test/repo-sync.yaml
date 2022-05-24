@@ -1,0 +1,15 @@
+apiVersion: configsync.gke.io/v1beta1
+kind: RepoSync
+metadata:
+  name: test-app-repo
+  namespace: test
+spec:
+  # Since this is for a namespace repository, the format should be unstructured
+  sourceFormat: unstructured
+  git:
+   repo: git@github.com:elatovg/acm-test-app.git
+   branch: main
+   dir: "config"
+   auth: none
+#    secretRef:
+#      name: acm-test-git-creds
